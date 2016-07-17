@@ -29,7 +29,7 @@ email = niznetij@gmail.com
 
   $ git remote add origin remote_repository_URL
 
- 13 Push the changes in your local repository to GitHub.
+ 13 Push the changes in your local repository to GitHub. Enter github username and password
 
   $ git push origin master
 
