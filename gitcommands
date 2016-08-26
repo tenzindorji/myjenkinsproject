@@ -1,0 +1,56 @@
+1 Install github to in your computer
+Follow below steps:
+
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+
+2 Create account in github https://github.com
+3 Create project in github
+4 Before working with repository, you need to configure your github username and email ID by running below command
+
+$ git config --global --edit
+
+name = tenzindorji
+email = niznetij@gmail.com
+
+5 Create local directory where you can check out the repository
+6 Create atleast one file so that it doesn't fail when you commit and push to github
+9 Initialize the local directory as a Git repository
+ $ git init
+10 Add the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+
+  $ git add .
+
+11 Commit the files that you've staged in your local repository.
+
+  $ git commit -m "First commit"
+ 12 Connect to github remove repository
+ Example: git remote add origin https://github.com/tenzindorji/myjenkinsproject.git
+
+  $ git remote add origin remote_repository_URL
+
+ 13 Push the changes in your local repository to GitHub. Enter github username and password
+
+  $ git push origin master
+
+ 14 Check the files uploaded in github.com
+
+Rails setup
+
+rails new projectname
+
+Controllers and views
+rails generate 
+
+
+
+
+Docker Container: Commands
+docker run --rm busybox:latest /bin/echo "hello world"
+docker images
+docker ps -a
+docker rm "container ID/first few words of container ID"
+docker rmi "image id" # rmi to effect image ids
+docker run -it --rm busybox:latest # get into busy box shell
+
+docker run -d -p 80:80 --name webserver nginx
